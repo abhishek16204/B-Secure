@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".About_us"
+    tools:showIn="@layout/app_bar_about_us">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/about_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_background"
+            android:fontFamily="sans-serif"
+            android:padding="5dp"
+            android:text="In today's world, a person has many
+confidential data to store which include  from social media accounts like gmail, facebook, instagram to bank details and also many official documents.It's generally hard to remember the details and passwords of each and every account .Sometimes,we  even forget the password of a particular account.To overcome this problem, user can make a file where he/she  can write all their passwords and other important data, and through our application user can convert it into an encrypted image file which will have all your data right there but no one could read it. So now you dont need to remember any password anymore.Our application is easy to use,secure,interactive and   no one can see or know about your data without decrypting the file through our application but if you delete the encrypted file it may result in loss of important data .
+
+
+Finally, we would like to conclude that using our application will not only let you save your important passwords but also any other text or image file that could be useful and is confidential.
+\n
+"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Made by-\n
+Harsh Pandey CSE-16223, 3rd year
+\nAbhishek Singh Rathore CSE-16204, 3rd year
+\nAditya Kumar CSE-16207, 3rd year"
+            android:background="@drawable/text_background"
+            android:padding="5dp"
+            android:layout_marginBottom="0dp"
+            android:fontFamily="sans-serif"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_inside"
+            android:layout_marginTop="20dp"
+            android:paddingHorizontal="30dp"
+            android:text="Contact Us"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:onClick="contactUs"></Button>
+        <TextView
+            android:id="@+id/contact_Harsh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_margin="16dp"
+            android:onClick="call_harsh"
+            />
+        <TextView
+            android:id="@+id/contact_Abhishek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:onClick="call_abhishek"/>
+        <TextView
+            android:id="@+id/contact_Aditya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_margin="16dp"
+            android:onClick="call_aditya"
+            />
+
+    </LinearLayout>
+
+
+
+</ScrollView>

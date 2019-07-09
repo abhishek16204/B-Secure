@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".encryption_page"
+    android:orientation="vertical"
+    android:background="@drawable/back2"
+    tools:showIn="@layout/activity_encryption_page">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <Button
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/button_inside"
+        android:text="Select File"
+        android:textSize="22sp"
+        android:textStyle="normal"
+        android:fontFamily="sans-serif-medium"
+        android:onClick="selectFile"/>
+
+    <TextView
+        android:id="@+id/show_path"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/text_background"
+        android:hint="Path"
+        android:padding="5dp"
+        android:textSize="18sp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/preview_or_write"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Or Write"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="normal"
+        android:layout_marginLeft="16dp"
+        android:textColor="@android:color/black"
+        android:textAllCaps="true"
+        android:textSize="22sp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="16dp"
+            android:background="@android:color/black">
+
+        </View>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/preview"
+            android:layout_width="match_parent"
+            android:minHeight="150dp"
+            android:gravity="top"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_weight="0"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:background="@drawable/text_background"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:text="Encrypt"
+        android:paddingHorizontal="35dp"
+        android:textSize="22sp"
+        android:onClick="encrypt_it"
+        android:fontFamily="sans-serif-medium"
+        android:background="@drawable/button_inside"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".decrypt"
+    android:background="@drawable/back2"
+    tools:showIn="@layout/activity_decrypt">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_inside"
+        android:fontFamily="sans-serif-medium"
+        android:onClick="selectFile"
+        android:paddingHorizontal="40dp"
+        android:text="Select File"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/show_path"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/text_background"
+        android:hint="Path"
+        android:padding="5dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_inside"
+        android:fontFamily="sans-serif-medium"
+        android:onClick="decrypt"
+        android:paddingHorizontal="40dp"
+        android:text="Decrypt"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/show_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="150dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/text_background"
+        android:padding="5dp"
+        android:scrollbars="vertical"
+        android:textSize="20sp" />
+</LinearLayout>
+</ScrollView>
