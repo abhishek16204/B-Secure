@@ -9,4 +9,5 @@ The main aim of developing such application is to hide your personal data stored
  1. A desktop or laptop with Android studio (version >3.0) installed in it.
  2. An  Android smartphone 
  
-![Home Page.png](https://github.com/abhishek16204/ELearner/blob/master/Home_page.png){:height="100px" width="150px"}
+![Home Page.png](https://github.com/abhishek16204/ELearner/blob/master/Home_page.png =100x100)
+
